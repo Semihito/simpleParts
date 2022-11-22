@@ -1,0 +1,33 @@
+data_all_to_list = []
+data = []
+
+csv_data=[(1,2,3),(4,5,6)]
+
+# 2
+print(len(csv_data))
+
+# list
+print(type(csv_data))
+
+# tuple
+print(type(csv_data[0]))
+
+# [(1, 2, 3), (4, 5, 6)]
+for x in range(len(csv_data)):
+    data_all_to_list.append(list(csv_data[x]))
+
+# [[1, 2, 3], [4, 5, 6]]
+for x in range(len(csv_data)):
+    data.append(csv_data[x])
+
+"""
+1
+2
+3
+4
+5
+6
+"""
+for y in data_all_to_list:
+    for z in y:
+        print(z)
